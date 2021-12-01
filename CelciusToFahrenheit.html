@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+        <h4>Celcius to fahrenheit</h4>
+   
+        <p><label>Celcius</label>
+            <input id="inputKG" type="number" placeholder="Celcius"
+                oninput="CtoFConverter(this.value)" onchange="CtoFConverter(this.value)">
+         </p>
+   
+      
+         <p>Fahrenheit:<span class="fahrenheit"></span></p>
+
+
+    <script>
+
+       function CtoFConverter(temp) {
+          document.querySelector(".fahrenheit").innerHTML=(temp-32)/1.8;
+       }
+
+    </script>
+
+    </body>
+    </html>
+
+
+
+
+
