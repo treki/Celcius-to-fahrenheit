@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <title>Celsius to Fahrenheit</title>
+    <style>
+      body {
+        background-color:#011936;
+        font-family: 'Nunito Sans', sans-serif;
+       text-align: center;
+      }
+      .column{
+        color: #465362;
+        border-radius: 5px;
+      }
+      .title   {
+        color:#F4FFFD;
+        padding: 20px;
+        margin: 40px;
+      }
+      .column-two{
+       max-width: 350px;
+       margin: auto;
+      }
+      h3{
+        color: #011936;
+        background-color: #F9DC5C;
+        padding-top: 30px;
+        border-radius: 10px;
+        height: 70px;
+        text-align: center;
+      }
+      .column-three{
+        background-color: #F9DC5C;
+        border-radius: 10px;
+        height: 300px;
+        padding-top: 30px;
+        max-width: 350px;
+       margin: auto;
+      }
+      .column-three p{
+        text-align: left;
+        padding: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      </style>
 </head>
 <body>
-    <h1>Temperature Converter</h1>
-        <h4>Insert a number into one of hte input</h4>
-   
-        <p><input id="c" type="number" onkeyup="convert('C')"">degrees Celsius</p>
-        <p><input id="f" type="number" onkeyup="convert('F')"">degrees Fahrenheit</p>
-  
+  <div class="column">
+    <h1 class="title">Temperature Converter</h1>
+  <div class="column-two">
+        <h3>Insert a number into one of the input</h4>
+   </div> 
+   <div class="column-three">
+        <p><input id="c" type="number" onkeyup="convert('C')""> Celsius</p>
+        <p><input id="f" type="number" onkeyup="convert('F')""> Fahrenheit</p>
+      </div>
+      </div>
         <script>
             function convert(degree) {
               var x;
@@ -27,6 +75,9 @@
 
     </body>
     </html>
+
+
+
 
 
 
